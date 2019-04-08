@@ -67,12 +67,23 @@ document.getElementById('oncampus').addEventListener('click',
 	function(){
 		document.querySelector('.bg-modal').style.display = 'flex';
 		document.querySelector('.bg-modal2').style.display = 'none';
+		document.querySelector('.bg-modal3').style.display = 'none';
 	});
 document.getElementById('lagcentral').addEventListener('click',
 	function(){
 		document.querySelector('.bg-modal2').style.display = 'flex';
 		document.querySelector('.bg-modal').style.display = 'none';
+		document.querySelector('.bg-modal3').style.display = 'none';
 	});
+document.getElementById('taftcampus').addEventListener('click',
+	function(){
+		document.querySelector('.bg-modal3').style.display = 'flex';
+		document.querySelector('.bg-modal2').style.display = 'none';
+		document.querySelector('.bg-modal').style.display = 'none';
+	});
+
+
+
 document.querySelector('.close').addEventListener('click',
 	function(){
 		document.querySelector('.bg-modal').style.display = 'none';
@@ -80,6 +91,10 @@ document.querySelector('.close').addEventListener('click',
 document.querySelector('.close2').addEventListener('click',
 	function(){
 		document.querySelector('.bg-modal2').style.display = 'none';
+	});
+document.querySelector('.close3').addEventListener('click',
+	function(){
+		document.querySelector('.bg-modal3').style.display = 'none';
 	});
 
 
