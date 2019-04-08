@@ -63,6 +63,26 @@ function moveSlide(n){
 	captionText.style.display = "block"; 
 }
 
+document.getElementById('oncampus').addEventListener('click',
+	function(){
+		document.querySelector('.bg-modal').style.display = 'flex';
+		document.querySelector('.bg-modal2').style.display = 'none';
+	});
+document.getElementById('lagcentral').addEventListener('click',
+	function(){
+		document.querySelector('.bg-modal2').style.display = 'flex';
+		document.querySelector('.bg-modal').style.display = 'none';
+	});
+document.querySelector('.close').addEventListener('click',
+	function(){
+		document.querySelector('.bg-modal').style.display = 'none';
+	});
+document.querySelector('.close2').addEventListener('click',
+	function(){
+		document.querySelector('.bg-modal2').style.display = 'none';
+	});
+
+
 var timer = null;
 function setTimer(){
 	timer = setInterval (function(){
